@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="sheets.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="glowny_kontener">
+      <nav>
+        <ul class="nav-links">
+          <li><a  href="#">menu1</a></li>
+          <li><a href="index-ofer.html">Oferta</a></li>
+          <li><a id="c1">Parabellum</a></li>
+          <li><a href="index-login.html">Zaloguj się</a></li>
+          <li><a href="index-reg.html">Zarejestruj się</a></li>
+        </ul>
+      </nav>
+      <div class="pol1">
+        <div class="zdj">
+          <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img id="c2" src="1.jpg"  style="width:1000px; height:600px;">
+              <div class="text"></div>
+          </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img id="c2" src="2.jpg"  style="width:1000px; height:600px;">
+              <div class="text"></div>
+          </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img id="c2" src="3.jpg" style="width:1000px; height:600px;">
+              <div class="text"></div>
+          </div>
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="txt">
+        <q>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+        </q><p>Thomas Brank</p>
+      </div>
+      <div class="pol2">
+        <div class="kont">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat dolor massa, quis efficitur quam maximus in. Praesent vel ante pulvinar, placerat dui et, tristique est. Proin dolor leo, venenatis in justo a, auctor aliquam nunc. Praesent vehicula mi ac massa bibendum, a rutrum velit condimentum. Nam nunc ante, hendrerit a purus ut, imperdiet auctor lorem. Sed mollis aliquet sapien et egestas. Vestibulum sed ante nec nisl imperdiet tempor. Etiam et ornare justo. Nam quis felis quis orci facilisis sagittis ut nec lorem. Sed sollicitudin diam et risus rhoncus vulputate. Phasellus nibh arcu, convallis sed dignissim fringilla, viverra id arcu. Nam rutrum nibh nec fermentum molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus efficitur eu risus eu lobortis. Maecenas finibus fermentum justo a luctus. Nullam nec congue odio.
+
+Mauris a sodales dui, eget ultricies velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce mauris massa, rhoncus nec sapien ut, porttitor fringilla tellus. Nam posuere arcu nibh, vitae mollis turpis pharetra non. Cras finibus, mauris et convallis ornare, est nunc commodo sapien, at rhoncus mauris neque volutpat ipsum. Nullam egestas non erat vel consectetur.</p>
+        </div>
+        <div class="kont">
+          <p>Quisque sit amet efficitur odio. Vestibulum luctus tincidunt justo. Suspendisse rhoncus eleifend metus. Phasellus eleifend volutpat libero, eu accumsan lectus sagittis at. Vivamus nec condimentum urna. Fusce interdum ligula nec libero lobortis, et congue erat gravida. In at molestie mi, at rhoncus felis. In at nunc nulla. Mauris vehicula condimentum nisl a egestas. Vestibulum sed urna vitae augue ultricies elementum. Suspendisse lobortis sollicitudin risus, id posuere urna ultrices et. In tincidunt, dui sed mattis mattis, magna ipsum maximus est, vel consequat nisi ligula non diam. Praesent eget consequat lacus. Etiam ultrices gravida congue. Aliquam eget turpis et tellus condimentum tristique.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc nec neque massa. Aenean sed accumsan nisl. Ut tempor quis est et condimentum. Aliquam sem augue, malesuada ac vulputate consectetur, accumsan porta metus. Fusce porttitor non leo non pharetra. Proin congue posuere placerat. Vestibulum ligula nisl, commodo eget nulla non, ornare viverra sem.
+          </p>
+        </div>
+
+      </div>
+      <div class="footer">
+        <p>Copyright © 2012 - 2024 TermsFeed®. All rights reserved.</p>
+      </div>
+    </div>
+
+
+
+    <script>
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2800);
+    }
+
+    </script>
+  </body>
+</html>

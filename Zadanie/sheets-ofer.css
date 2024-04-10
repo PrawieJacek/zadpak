@@ -26,21 +26,15 @@ nav {
   width:104.8%;
   top: 0;
   justify-content: center;
-
-
-
+  text-transform: uppercase;
 }
 
 .nav-links li {
   margin-right: 40px;
-
-
 }
-
 .nav-links li:last-child {
   margin-right: 50px;
 }
-
 .nav-links li a {
   font-size: 20px;
   text-decoration: none;
@@ -51,7 +45,6 @@ nav {
 }
 
 .nav-links li a:hover {
-
   font-size: 22px;
   font-size-adjust: 30px;
   font-weight: bold;
@@ -117,8 +110,8 @@ nav {
   letter-spacing: 1.3px;
   font-weight: 700;
   color: black;
-  background: rgb(221,221,221);
-  background: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(144,144,144,1) 100%);
+  background: rgb(249,249,249);
+  background: linear-gradient(180deg, rgba(249,249,249,1) 0%, rgba(207,207,207,1) 100%);
   border: none;
   border-radius: 20px;
   transition: all 0.3s ease-in-out 0s;
@@ -136,26 +129,33 @@ nav {
   margin-top: 5%;
 }
 
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   width: 150%;
   height: 600px;
   background-color: white;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 37px 13px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 37px 13px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 37px 13px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 37px 13px rgba(0, 0, 0, 1), inset 0px 0px 33px -7px rgba(0, 0, 0, 1);;
   z-index: 1;
   margin-left: -25%;
   margin-top: 20%;
-padding:10px;
+  padding-left:20px;
+  padding-top:3.5%;
+}
+.dropdown-content li
+{
+  margin-top: 3.5%;
+  margin-left:
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+
 }
 
 
 
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show
 {
 
@@ -176,8 +176,8 @@ padding:10px;
   letter-spacing: 1.3px;
   font-weight: 700;
   color: black;
-  background: rgb(221,221,221);
-  background: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(144,144,144,1) 100%);
+  background: rgb(249,249,249);
+  background: linear-gradient(180deg, rgba(249,249,249,1) 0%, rgba(207,207,207,1) 100%);
   border: none;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 1);
@@ -186,34 +186,44 @@ padding:10px;
   outline: none;
   position: relative;
   padding: 10px;
+
 }
 
 
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown2
 {
   margin-left: 25%;
   margin-top: 5%;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content2 {
-  display: none;
+
+  display:none ;
   width: 150%;
   height: 400px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 0px 37px 13px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 37px 13px rgba(0, 0, 0, 1), inset 0px 0px 33px -7px rgba(0, 0, 0, 1);;
   z-index: 1;
   width: 150%;
   height: 600px;
   margin-left: -25%;
   margin-top: 20%;
-  padding:10px;
+  padding-left:20px;
+  padding-top:3.5%;
+
+
 
 }
-
+.dropdown-content2 li
+{
+  margin-top: 3.5%;
+  margin-left:
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
 
 
 
@@ -221,7 +231,7 @@ padding:10px;
 
 
 .dropbtn:hover, .dropbtn:focus {
-  color: white;
+  color: black;
   transform: translateY(-4px);
 }
 
@@ -244,7 +254,7 @@ content: '';
   z-index: 3px;
 }
 .dropbtn2:hover, .dropbtn2:focus {
-  color: white;
+  color: black;
   transform: translateY(-4px);
 }
 
@@ -264,6 +274,7 @@ button::after {
   transform: translate(-50%, -50%);
   animation: ring 3s forwards;
 }
+
 button:hover::after, button:focus::after {
   animation: none;
   display: none;
@@ -277,9 +288,15 @@ button:hover::after, button:focus::after {
     border-radius: 30px;
 
   }
+  50% {
+    width: 50px;
+    height: 30px;
+    opacity: 0;
+    border-radius: 30px;
+  }
   100% {
     width: 50px;
-    height: 60px;
+    height: 10px;
     opacity: 0;
     border-radius: 30px;
   }
@@ -298,5 +315,5 @@ button:hover::after, button:focus::after {
 .dropdown-content,
 .dropdown-content2
  {
-  animation: fadeIn 0.5s ease-in; /* Ustaw animację */
+  animation: fadeIn 0.5s ease-in;
 }

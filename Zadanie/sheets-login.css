@@ -26,19 +26,19 @@ nav {
   width:104.8%;
   top: 0;
   justify-content: center;
-
+  text-transform: uppercase;
 
 
 }
 
 .nav-links li {
-  margin-right: 90px; /* Zwiększenie odstępu między linkami */
+  margin-right: 90px;
 
 
 }
 
 .nav-links li:last-child {
-  margin-right: 0; /* Usunięcie odstępu po ostatnim elemencie */
+  margin-right: 0;
 }
 
 .nav-links li a {

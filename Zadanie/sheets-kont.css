@@ -1,0 +1,171 @@
+
+body {
+  margin: 0;
+
+
+}
+
+nav {
+  background-color: #f7f7f7;
+  display: flex;
+  font-family: "Roboto Mono";
+  z-index: 1;
+
+
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 8px;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(247, 247, 247, 1);
+  width:104.8%;
+  top: 0;
+  justify-content: center;
+  text-transform: uppercase;
+
+
+
+}
+
+.nav-links li {
+  margin-right: 90px;
+
+
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  transition: all 500ms;
+  margin-left: 100px;
+}
+
+.nav-links li a:hover {
+
+  font-size: 22px;
+  font-size-adjust: 30px;
+  font-weight: bold;
+}
+.pol1
+{
+  width: auto;
+  display: flex;
+  height:100vh;
+  background: rgb(28,28,28);
+  background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(18,18,18,1) 50%, rgba(28,28,28,1) 100%);
+
+}
+.footer
+{
+  background-color: rgba(91,91,91,1);
+  height: 9vh;
+  margin-top: -20px;
+
+
+}
+#c1
+{
+  font-size: 24px;
+  font-weight: bold;
+
+}
+#c3
+{
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer p
+{
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  padding: 30px;
+  color: #e3e3e3;
+  text-shadow: 1px 2px 2px black;
+  font-size: 20px;
+
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+
+
+
+:root {
+	--d: 4500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(255, 255, 255, 1);
+	--c2: rgba(28, 28, 28, 0.1);
+}
+
+
+.box {
+	border: 0.35rem solid;
+
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.5turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+  width: 35%;
+  height: 50vh;
+  margin-left: 34%;
+  background: rgb(19,19,19);
+  background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(11,11,11,1) 100%);
+  margin-top: 10%;
+  -webkit-box-shadow: 0px 0px 28px 5px rgba(0, 0, 0, 1);
+}
+.box p
+{
+  text-align: justify;
+  margin-top: -3%;
+  color:white;
+  padding: 25px;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+
+}
+.box h2
+{
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 7px;
+    color:white;
+    text-shadow: 0px 0px 5px rgba(214, 214, 214, 1);
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
